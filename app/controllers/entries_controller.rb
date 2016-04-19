@@ -1,10 +1,7 @@
 class EntriesController < ApplicationController
 
   def index
-     @all = Entry.all
-     random = rand(0..@all.length)
-     random_entry = @all[random]
-    #  render json: random_entry
+
   end
 
   def new
@@ -17,6 +14,10 @@ class EntriesController < ApplicationController
   end
 
   def show
+    @all = Entry.all
+    random = rand(0..@all.length)
+    random_entry = @all[random]
+    render json: random_entry
 
   end
 
