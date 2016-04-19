@@ -7,7 +7,11 @@ $(function(){
       method: 'GET'
     }).success(function(data){
       console.log(data);
-      $('#name').text(data.name);
+      $('#name').text(data.name)
+      $('#memory').text(data.memory)
+      $('#quote').text(data.quote),
+      $('#grateful').text(data.grateful),
+      $('#learned').text(data.learned);
     })
   })
 });
