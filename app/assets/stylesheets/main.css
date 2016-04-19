@@ -21,6 +21,8 @@ h1, h2, h3, h4, h5, h6, p, .btn, .navbar-nav a, .form-control, .list-inline, sma
 
 label {
   margin-top: 15px;
+  color: #fff;
+  font-size: 1.3em;
 }
 
 p, .lead {
@@ -59,7 +61,6 @@ h4 {
   font-weight: 700;
 }
 
-h
 
 .lead {
   font-size: 21px;
@@ -396,6 +397,11 @@ header {
 
 .background {
   background-color: #333;
+}
+
+.img-round {
+  border-radius: 50%;
+  display: inline;
 }
 
 
