@@ -26,8 +26,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem "pry-rails"
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 
-gem "bootstrap_form"
-
 gem "font-awesome-rails"
 
 # Use ActiveModel has_secure_password
