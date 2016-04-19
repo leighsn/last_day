@@ -1,13 +1,13 @@
 
 $(function(){
-      $('.new_message').on('submit', function(event){
-        event.preventDefault();
-        event.stopPropagation();
-        $.ajax({
-          url: '/entries/index',
-          method: 'GET',
-          data: data
-        }).success(function(data){
-          $('#message_content').val("data");
-        })
-      });
+  $('#getEntry').on('click', function(event){
+    event.preventDefault();
+    $.ajax({
+      url: '/entries/show',
+      method: 'GET'
+    }).success(function(data){
+      console.log(data);
+      $('#name').text(data.name);
+    })
+  })
+});
