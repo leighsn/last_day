@@ -1,0 +1,10 @@
+<%= form_for @entry do |f|  %>
+Name: <%= f.text_field :name %><br />
+Memory : <%= f.text_field :memory %><br />
+Quote : <%= f.text_area :quote %><br />
+Grateful : <%= f.text_area :grateful %><br />
+Learned : <%= f.text_area :learned %><br />
+
+<%= f.submit %>
+
+<% end %>
