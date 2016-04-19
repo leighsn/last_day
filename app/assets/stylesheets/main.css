@@ -304,7 +304,7 @@ a:hover, a:focus {
    Main styles
    ========================================================================== */
 header {
-  background: url(/assets/header-bg.jpg) no-repeat center center;
+  background: url(/assets/classroom.jpg) no-repeat center center;
   width: 100%;
   padding: 20px 10px 60px 10px;
   height: 100vh;
@@ -389,8 +389,13 @@ header {
 	padding: 30px 0px;
 }
 
-#background {
-  background: url(/assets/header-bg.jpg) #231f20 no-repeat center center fixed;
+#background-image {
+  background: url(/assets/floor.jpg) #231f20 no-repeat center center fixed;
+  background-size: 100%;
+}
+
+.background {
+  background-color: #333;
 }
 
 
@@ -400,7 +405,7 @@ header {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: 100%;
 }
 
 hr.line {
