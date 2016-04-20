@@ -6,25 +6,32 @@ $(function(){
       url: '/entries/show',
       method: 'GET'
     }).success(function(data){
-      console.log(data);
-      $('#name').text(data.name)
-      if(data.memory !== null){
-         $('#memory').text(data.memory).show()}
-         else {
-           $('#memory').hide()}
-        if(data.quote !== null){
-              $('#quote').text(data.quote).show()}
-              else {
-                $('#quote').hide()}
-        if(data.grateful !== null){
-                   $('#grateful').text(data.grateful).show()}
-                   else {
-                     $('#grateful').hide()}
-      if(data.learned !== null){
-            $('#learned').text(data.learned).show()}
-              else {
-                  $('#learned').hide()}
+      $('#welcome').hide();
+      $('#name').text(data.name + " says...")
+      if (data.memory) {
+        $('#memory').text("My favorite Ian memory is " + data.memory).show()
+      }
+      else {
+        $('#memory').hide()
+      }
+      if (data.quote){
+        $('#quote').text("my favorite Ian quote is " + data.quote).show()
+      }
+      else {
+        $('#quote').hide()
+      }
+      if (data.grateful){
+        $('#grateful').text("I'm grateful to Ian for " + data.grateful).show()
+      }
+      else {
+        $('#grateful').hide()
+      }
+      if (data.learned){
+        $('#learned').text("Ian taught me " + data.learned).show()
+      }
+      else {
+        $('#learned').hide()
+      }
     })
   })
-
 });

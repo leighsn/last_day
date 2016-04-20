@@ -1,8 +1,5 @@
 class EntriesController < ApplicationController
-
-  def index
-
-  end
+  skip_before_filter  :verify_authenticity_token
 
   def new
    @entry = Entry.new
@@ -10,7 +7,7 @@ class EntriesController < ApplicationController
 
   def create
     @entry = Entry.create(entry_params)
-    redirect_to "/entries/index"
+    redirect_to "/"
   end
 
   def show
@@ -23,6 +20,6 @@ class EntriesController < ApplicationController
   private
 
   def entry_params
-   params.require(:entry).permit(:name, :memory, :quote, :grateful, :learned)
+   params.permit(:name, :memory, :quote, :grateful, :learned)
   end
 end

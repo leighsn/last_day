@@ -1,44 +1,46 @@
   <div id="background-image">
     <div class="container">
-      <div class="row col-xs-8">
-        <form class="form-horizontal transparent50percent margin-top margin-80">
-          <div class="form-group">
-            <label for="name" class="col-sm-3 control-label">My name is...</label>
-            <div class="col-sm-9">
-              <input type="text" class="form-control" placeholder="Adele Goldstine">
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="memory" class="col-sm-3 control-label" style="color: black;">My favorite memory of Ian is...</label>
-            <div class="col-sm-9">
-              <input type="text" class="form-control" placeholder="Every feelings Friday.">
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="quote" class="col-sm-3 control-label" style="color: black;">My favorite Ian quote is...</label>
-            <div class="col-sm-9">
-              <input type="text" class="form-control" placeholder="Doing the labs helps you become a better programmer!">
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="grateful" class="col-sm-3 control-label">I'm grateful to Ian for...</label>
-            <div class="col-sm-9">
-              <input type="text" class="form-control" placeholder="Staying late to help my group fix a nasty bug.">
-            </div>
-          </div>
+        <div class="panel-transparent">
+          <div class="row col-xs-8 well well-sm">
+            <form action="/entries" method="post" class="form-horizontal margin-top margin-80">
+              <div class="form-group">
+                <label for="name" class="col-sm-3 control-label">My name is...</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" name="name" placeholder="Adele Goldstine">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="memory" class="col-sm-3 control-label" name="memory" style="color: black;">My favorite memory of Ian is...</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" name="memory" placeholder="Every feelings Friday.">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="quote" class="col-sm-3 control-label">My favorite Ian quote is...</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" name="quote" placeholder="Doing the labs helps you become a better programmer!">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="grateful" class="col-sm-3 control-label">I'm grateful to Ian for...</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" name="grateful" placeholder="Staying late to help my group fix a nasty bug.">
+                </div>
+              </div>
 
-          <div class="form-group">
-            <label for="learned" class="col-sm-3 control-label">Ian taught me...</label>
-            <div class="col-sm-9">
-              <input type="text" class="form-control" id="inputPassword3" placeholder="That debugger is my friend.">
-            </div>
+              <div class="form-group">
+                <label for="learned" class="col-sm-3 control-label">Ian taught me...</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" name="learned" placeholder="That debugger is my friend.">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-3 col-sm-4">
+                  <button type="submit" class="btn btn-default">Submit!</button>
+                </div>
+              </div>
+            </form>
           </div>
-          <div class="form-group">
-            <div class="col-sm-offset-4 col-sm-4">
-              <button type="submit" class="btn btn-default">Submit!</button>
-            </div>
-          </div>
-        </form>
+        </div>
       </div>
-    </div>
   </div>

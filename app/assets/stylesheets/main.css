@@ -19,10 +19,19 @@ h1, h2, h3, h4, h5, h6, p, .btn, .navbar-nav a, .form-control, .list-inline, sma
   opacity: 50%;
 }
 
+.control-label {
+  font-size: 1em;
+  color: #111;
+}
+
 label {
   margin-top: 15px;
   color: #fff;
   font-size: 1.3em;
+}
+
+.panel-default {
+  color: rgba(255, 255, 255, 0.5)!important;
 }
 
 p, .lead {
@@ -147,7 +156,7 @@ a:hover, a:focus {
 
 .btn-primary {
   background-color:#70cbce;
-  color: #ffffff;
+  color: #eee;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
@@ -391,7 +400,7 @@ header {
 }
 
 #background-image {
-  background: url(/assets/floor.jpg) #231f20 no-repeat center center fixed;
+  background: url(/assets/floor.jpg) no-repeat center center fixed;
   background-size: 100%;
 }
 
