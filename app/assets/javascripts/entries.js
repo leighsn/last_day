@@ -15,7 +15,7 @@ $(function(){
         $('#memory').hide()
       }
       if (data.quote){
-        $('#quote').text("my favorite Ian quote is " + data.quote).show()
+        $('#quote').text("My favorite Ian quote is " + data.quote).show()
       }
       else {
         $('#quote').hide()
